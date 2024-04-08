@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- bootstrap link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- navbar-section start -->
+    <div class="hed sticky-top ">
+        <nav class=" navbar navbar-expand-lg  flex-wrap">
+
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#"><span class="company-text"> Company</span><br> <span
+                        class="company-name-text">Name Here</span></a>
+                <div class="navbar-toggler text-white" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </div>
+                <div class="collapse gap-3 navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 mb-lg-0 mx-4">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Departments
+                                <i class="fa-solid fa-chevron-down ms-1 icon"></i>
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Brands
+                                <i class="fa-solid fa-chevron-down ms-1 icon"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Beds</a></li>
+                                <li><a class="dropdown-item" href="#">Benches</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form action="" class="from-box flex-grow-1" role="search">
+                        <input type="search" class="input-search" placeholder="Search Furniture">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-box">
+                                <svg class="icon-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.20117 10.4001C4.20117 9.29557 5.0966 8.40015 6.20117 8.40015H17.8012C18.9057 8.40015 19.8012 9.29558 19.8012 10.4001V16.6001C19.8012 17.7047 18.9057 18.6001 17.8012 18.6001H6.20117C5.0966 18.6001 4.20117 17.7047 4.20117 16.6001V10.4001Z"
+                                        stroke="#272727" stroke-width="1.75" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M10.5008 6.05V6C10.5008 5.44772 10.0531 5 9.50078 5H7.30078C6.7485 5 6.30078 5.44772 6.30078 6V6.05"
+                                        stroke="#272727" stroke-width="1.75" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M16.5 10.9875H17.6" stroke="#272727" stroke-width="1.75"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="12" cy="13.5" r="2.5" stroke="#272727" stroke-width="1.75"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7 1H3C1.89543 1 1 1.89543 1 3V7" stroke="#272727" stroke-width="1.75"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M18 23L21 23C22.1046 23 23 22.1046 23 21L23 17" stroke="#272727"
+                                        stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M23 7L23 3C23 1.89543 22.1046 1 21 1L17 1" stroke="#272727"
+                                        stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M1 18L1 21C1 22.1046 1.89543 23 3 23L7 23" stroke="#272727"
+                                        stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="icon-box">
+
+                                <svg class="icon-img" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="path-1-inside-1_3_59" fill="white">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M16.1814 17.0956C14.7855 18.2833 12.9764 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11C19 12.7204 18.4569 14.314 17.5329 15.6187L21.3891 19.4749C21.7796 19.8654 21.7796 20.4986 21.3891 20.8891C20.9986 21.2796 20.3654 21.2796 19.9749 20.8891L16.1814 17.0956Z" />
+                                    </mask>
+                                    <path
+                                        d="M16.1814 17.0956L17.5956 15.6814L16.2907 14.3765L14.8853 15.5723L16.1814 17.0956ZM17.5329 15.6187L15.9008 14.4627L14.9255 15.8397L16.1187 17.0329L17.5329 15.6187ZM21.3891 19.4749L22.8033 18.0607L22.8033 18.0607L21.3891 19.4749ZM21.3891 20.8891L22.8033 22.3033L22.8033 22.3033L21.3891 20.8891ZM11 21C13.4689 21 15.7334 20.1027 17.4774 18.6188L14.8853 15.5723C13.8375 16.4639 12.4839 17 11 17V21ZM1 11C1 16.5228 5.47715 21 11 21V17C7.68629 17 5 14.3137 5 11H1ZM11 1C5.47715 1 1 5.47715 1 11H5C5 7.68629 7.68629 5 11 5V1ZM21 11C21 5.47715 16.5228 1 11 1V5C14.3137 5 17 7.68629 17 11H21ZM19.165 16.7746C20.3205 15.1431 21 13.1479 21 11H17C17 12.2929 16.5933 13.4849 15.9008 14.4627L19.165 16.7746ZM16.1187 17.0329L19.9749 20.8891L22.8033 18.0607L18.9471 14.2044L16.1187 17.0329ZM19.9749 20.8891C19.5844 20.4986 19.5844 19.8654 19.9749 19.4749L22.8033 22.3033C23.9749 21.1317 23.9749 19.2322 22.8033 18.0607L19.9749 20.8891ZM19.9749 19.4749C20.3654 19.0843 20.9986 19.0843 21.3891 19.4749L18.5607 22.3033C19.7322 23.4749 21.6317 23.4749 22.8033 22.3033L19.9749 19.4749ZM21.3891 19.4749L17.5956 15.6814L14.7671 18.5098L18.5607 22.3033L21.3891 19.4749Z"
+                                        fill="#272727" mask="url(#path-1-inside-1_3_59)" />
+                                </svg>
+                            </div>
+
+                        </div>
+
+                    </form>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center ">
+                        <li class="nav-item d-flex justify-content-between align-items-center mx-4">
+                            <svg class="icon-img" width="26" height="24" viewBox="0 0 26 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.625 22.5C2.9375 16.6667 4.6875 15.5 6.875 15.5" stroke="white"
+                                    stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M24.375 22.5C23.0625 16.6667 21.3125 15.5 19.125 15.5" stroke="white"
+                                    stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M18.25 7.625C18.25 9.66336 17.7178 11.6809 16.7744 13.1606C15.838 14.6295 14.5529 15.5 13 15.5C11.4471 15.5 10.162 14.6295 9.22557 13.1606C8.2822 11.6809 7.75 9.66336 7.75 7.625C7.75 5.59321 8.2775 4.07025 9.1483 3.06788C10.0049 2.08186 11.2792 1.5 13 1.5C14.7208 1.5 15.9951 2.08186 16.8517 3.06788C17.7225 4.07025 18.25 5.59321 18.25 7.625Z"
+                                    stroke="white" stroke-width="1.75" />
+                            </svg>
+
+                            <a href="#" class="nav-link mb-0 ">My Account</a>
+                        </li>
+                        <li class="nav-item d-flex justify-content-between align-items-center mx-4">
+                            <svg class="icon-img" width="32" height="23" viewBox="0 0 32 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H7L12 14H28L31 4H13" stroke="white" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M15 20C15 21.1046 14.1046 22 13 22C11.8954 22 11 21.1046 11 20C11 18.8954 11.8954 18 13 18C14.1046 18 15 18.8954 15 20Z"
+                                    stroke="white" stroke-width="2" />
+                                <path
+                                    d="M29 20C29 21.1046 28.1046 22 27 22C25.8954 22 25 21.1046 25 20C25 18.8954 25.8954 18 27 18C28.1046 18 29 18.8954 29 20Z"
+                                    stroke="white" stroke-width="2" />
+                            </svg>
+
+                            <a href="#" class="nav-link mb-0 ">user</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+        <div class="heder-bottom">
+            <div class="container-fluid d-flex justify-content-between ">
+                <div>
+                    <a href="#" class="nav-link mb-0 ">
+                        <svg class="img-icon" width="23" height="15" viewBox="0 0 23 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.47992 8.66438V11.9996C1.47992 12.943 2.24365 13.7067 3.1861 13.7067H16.8678C17.4528 13.7067 17.9977 13.4059 18.3103 12.9118L21.2363 8.27861C21.4121 8.00027 21.5 7.68384 21.5 7.36741C21.5 7.05196 21.4121 6.73455 21.2363 6.45621L18.3103 1.82403C17.9977 1.32888 17.4528 1.02905 16.8678 1.02905H3.1861C2.24365 1.02905 1.47992 1.79278 1.47992 2.73621V9.2699"
+                                fill="#272727" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.47992 8.66438V11.9996C1.47992 12.943 2.24365 13.7067 3.1861 13.7067H16.8678C17.4528 13.7067 17.9977 13.4059 18.3103 12.9118L21.2363 8.27861C21.4121 8.00027 21.5 7.68384 21.5 7.36741C21.5 7.05196 21.4121 6.73455 21.2363 6.45621L18.3103 1.82403C17.9977 1.32888 17.4528 1.02905 16.8678 1.02905H9.71979M6.04276 1.02905H3.1861C2.24365 1.02905 1.47992 1.79278 1.47992 2.73621V9.2699"
+                                fill="#272727" />
+                            <path
+                                d="M2.47992 8.66438C2.47992 8.1121 2.0322 7.66438 1.47992 7.66438C0.927635 7.66438 0.479919 8.1121 0.479919 8.66438H2.47992ZM18.3103 12.9118L19.1554 13.4463L19.1558 13.4457L18.3103 12.9118ZM21.2363 8.27861L20.3908 7.74462L20.3908 7.74465L21.2363 8.27861ZM21.2363 6.45621L22.0818 5.92222L22.0817 5.92216L21.2363 6.45621ZM18.3103 1.82403L17.4646 2.35778L17.4648 2.35808L18.3103 1.82403ZM9.71979 0.0290527C9.1675 0.0290527 8.71979 0.476768 8.71979 1.02905C8.71979 1.58134 9.1675 2.02905 9.71979 2.02905V0.0290527ZM6.04276 2.02905C6.59504 2.02905 7.04276 1.58134 7.04276 1.02905C7.04276 0.476768 6.59504 0.0290527 6.04276 0.0290527V2.02905ZM0.479919 9.2699C0.479919 9.82218 0.927635 10.2699 1.47992 10.2699C2.0322 10.2699 2.47992 9.82218 2.47992 9.2699H0.479919ZM0.479919 8.66438V11.9996H2.47992V8.66438H0.479919ZM0.479919 11.9996C0.479919 13.4949 1.69099 14.7067 3.1861 14.7067V12.7067C2.79631 12.7067 2.47992 12.3911 2.47992 11.9996H0.479919ZM3.1861 14.7067H16.8678V12.7067H3.1861V14.7067ZM16.8678 14.7067C17.7963 14.7067 18.66 14.2297 19.1554 13.4463L17.4651 12.3773C17.3355 12.5822 17.1092 12.7067 16.8678 12.7067V14.7067ZM19.1558 13.4457L22.0818 8.81258L20.3908 7.74465L17.4648 12.3778L19.1558 13.4457ZM22.0818 8.8126C22.3605 8.37126 22.5 7.86906 22.5 7.36741H20.5C20.5 7.49862 20.4636 7.62928 20.3908 7.74462L22.0818 8.8126ZM22.5 7.36741C22.5 6.86703 22.3606 6.36381 22.0818 5.92222L20.3908 6.9902C20.4635 7.1053 20.5 7.23688 20.5 7.36741H22.5ZM22.0817 5.92216L19.1557 1.28999L17.4648 2.35808L20.3908 6.99026L22.0817 5.92216ZM19.1559 1.29029C18.6599 0.5044 17.7954 0.0290527 16.8678 0.0290527V2.02905C17.1101 2.02905 17.3356 2.15336 17.4646 2.35778L19.1559 1.29029ZM16.8678 0.0290527H9.71979V2.02905H16.8678V0.0290527ZM6.04276 0.0290527H3.1861V2.02905H6.04276V0.0290527ZM3.1861 0.0290527C1.69099 0.0290527 0.479919 1.24087 0.479919 2.73621H2.47992C2.47992 2.34469 2.79631 2.02905 3.1861 2.02905V0.0290527ZM0.479919 2.73621V9.2699H2.47992V2.73621H0.479919Z"
+                                fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.9252 9.22317C13.4505 9.22317 12.9749 9.04152 12.6126 8.67919C11.8889 7.95453 11.8889 6.78061 12.6126 6.05595C13.3373 5.33129 14.5131 5.33129 15.2368 6.05595C15.5991 6.41828 15.7798 6.89292 15.7798 7.36757"
+                                fill="#272727" />
+                            <path
+                                d="M13.9252 9.22317C13.4505 9.22317 12.9749 9.04152 12.6126 8.67919C11.8889 7.95453 11.8889 6.78061 12.6126 6.05595C13.3373 5.33129 14.5131 5.33129 15.2368 6.05595C15.5991 6.41828 15.7798 6.89292 15.7798 7.36757"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        Presidents Day Sale
+
+                    </a>
+                </div>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="nav-link mb-0 ">
+                        <svg class="img-icon" width="24" height="18" viewBox="0 0 24 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21.7571 13.0617C21.2726 13.3269 21.0949 13.9346 21.3601 14.419C21.6253 14.9035 22.233 15.0812 22.7175 14.816L21.7571 13.0617ZM16.5487 14.6256C16.9934 14.9532 17.6194 14.8582 17.9469 14.4135C18.2744 13.9688 18.1795 13.3428 17.7348 13.0153L16.5487 14.6256ZM17.4965 12.5619V5.31915H15.4965V12.5619H17.4965ZM17.4965 5.31915C17.4965 5.03047 17.7486 4.73816 18.1329 4.73816V2.73816C16.7096 2.73816 15.4965 3.86141 15.4965 5.31915H17.4965ZM18.1329 4.73816H21.4317V2.73816H18.1329V4.73816ZM21.4317 4.73816C21.8161 4.73816 22.0682 5.03047 22.0682 5.31915H24.0682C24.0682 3.86141 22.855 2.73816 21.4317 2.73816V4.73816ZM22.0682 5.31915V12.5619H24.0682V5.31915H22.0682ZM22.0682 12.5619C22.0682 12.7607 21.9565 12.9525 21.7571 13.0617L22.7175 14.816C23.5103 14.382 24.0682 13.5443 24.0682 12.5619H22.0682ZM17.7348 13.0153C17.5807 12.9018 17.4965 12.7361 17.4965 12.5619H15.4965C15.4965 13.4147 15.9184 14.1614 16.5487 14.6256L17.7348 13.0153Z"
+                                fill="white" />
+                            <path
+                                d="M0.931824 4.1786V1.67134C0.931824 1.30072 1.2409 1 1.62182 1H15.4606C15.842 1 16.1506 1.30072 16.1506 1.67134V12.7804C16.1506 13.1514 15.842 13.4517 15.4606 13.4517H6.46591M1.62182 13.4517C1.2409 13.4517 0.931824 13.1514 0.931824 12.7804V9.00291"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.46594 14.1433C6.46594 15.2896 5.53674 16.2188 4.39091 16.2188C3.24456 16.2188 2.31537 15.2896 2.31537 14.1433C2.31537 12.9974 3.24456 12.0682 4.39091 12.0682C5.53674 12.0682 6.46594 12.9974 6.46594 14.1433Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M21.6847 14.1433C21.6847 15.2896 20.7555 16.2188 19.6091 16.2188C18.4633 16.2188 17.5341 15.2896 17.5341 14.1433C17.5341 12.9974 18.4633 12.0682 19.6091 12.0682C20.7555 12.0682 21.6847 12.9974 21.6847 14.1433Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Free Shipping
+                    </a>
+                    <a href="#" class="nav-link mb-0 ms-2">
+                        <svg class="img-icon" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.56896 15.609C8.67808 16.6046 9.5036 17.2879 9.52018 17.301C9.69471 17.4572 11.5072 19 14.126 19C14.3912 19 14.6583 18.9835 14.9201 18.952C18.004 18.5785 19.0616 16.4607 19.3731 15.5662C19.6323 14.8262 19.1454 14.0321 18.5276 13.7581L15.215 12.2851C15.0213 12.2004 14.8031 12.1577 14.5649 12.1577C14.1801 12.1577 13.6416 12.2816 13.283 12.6289L12.2402 13.6394C12.1521 13.7249 11.9548 13.8105 11.7498 13.8105C11.6477 13.8105 11.5997 13.7878 11.5971 13.7869C10.9129 13.4431 9.8352 12.7554 8.58733 11.4334C7.4782 10.2545 6.95375 9.45424 6.71028 8.99087C6.64745 8.87219 6.73035 8.52401 6.88743 8.36694L7.81504 7.43932C8.27754 6.97595 8.4765 6.16003 8.28016 5.53871L7.23648 2.22269C7.04712 1.62406 6.4162 1.00274 5.68581 1.00012H5.66835H5.65265C4.32624 1.0455 3.19268 1.67554 2.46054 2.77507C1.66731 3.9636 1.34443 5.76822 1.67167 7.62956C1.78075 8.25087 1.96226 8.87743 2.22318 9.49089C2.56961 10.3077 3.05742 11.1 3.70143 11.8173C4.0819 12.2406 4.49291 12.6717 4.91265 13.0958"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        000-000-0000
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar-section end -->
+
+    <!-- hero section start -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="banner-slider-section">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src=" assets/img/hero/Primary-Banner.png" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="assets/img/hero/Primary-Banner.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="assets/img/hero/Primary-Banner.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="secondary-banner-section">
+                        <a href="#">
+                            <img src="assets/img/hero/Secondary-Banner.png" width="100%" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product section start -->
+    <section class="my-2">
+        <div class="container">
+            <div class="row align-items-stretch">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="product-card">
+                        <div class="product-info">
+                            <p class="sub-text">Sale Prices on</p>
+                            <p class="main-text">Dining & Kitchen Sets</p>
+                        </div>
+                        <div class="product-img ">
+                            <a href="#">
+                                <img src="assets/img/product-1.png" alt="">
+                            </a>
+                        </div>
+                        <img src="assets/img/shape/Rectangle-2.png" class="img-shape" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="product-card ">
+                        <div class="product-info">
+                            <p class="sub-text">Sale Prices on</p>
+                            <p class="main-text">Dining & Kitchen Sets</p>
+                        </div>
+                        <div class="product-img ">
+                            <a href="#">
+                                <img src="assets/img/product-2.png" alt="">
+                            </a>
+                        </div>
+                        <img src="assets/img/shape/Rectangle-2.png" class="img-shape" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="product-card product-card-last">
+                        <div class="product-info">
+                            <p class="sub-text">Get them before they're gone!</p>
+                            <p class="main-text">Clearance <br /><span> Deals</span></p>
+                        </div>
+                        <div class="product-img ">
+                            <a href="#">
+                                <img src="assets/img/product-3.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- product section end -->
+    <!-- product-suggestion-slider start -->
+    <section>
+        <div class="custom-container">
+            <div class="slider-section">
+                <div class="swiper product-suggestion-slider" style="padding: 50px 0;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main-top-slider-card">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-sm-12" >
+                                            <p class="sub-text">Shop by</p>
+                                            <p class="main-text">Bedroom</p>
+                                            <a href="#" class="shop-btn">
+                                                Shop Bedroom Sets
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-9 col-md-8 col-sm-12" >
+                                            <div class="big-img-set">
+                                                <img src="assets/img/bed-set-5b-w.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-product-section">
+                                <div class="container">
+                                    <div class="d-flex justify-content-between  flex-wrap flex-wrap-sm">
+
+                                        <div
+                                            class=" sale-product-card disply-flex justify-content-center align-items-center">
+                                            <div class="img-box">
+                                                <a href="#">
+                                                    <img src="assets/img/beds.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p class="text-center mt-4">Beds</p>
+                                        </div>
+                                        <div
+                                            class=" sale-product-card disply-flex justify-content-center align-items-center">
+                                            <div class="img-box">
+
+                                                <a href="#">
+                                                    <img src="assets/img/night-stands.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p class="text-center mt-4">Beds</p>
+                                        </div>
+                                        <div
+                                            class="  sale-product-card disply-flex justify-content-center align-items-center">
+                                            <div class="img-box">
+
+                                                <a href="#">
+                                                    <img src="assets/img/dressers-dor.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p class="text-center mt-4">Dressers</p>
+                                        </div>
+                                        <div
+                                            class=" sale-product-card disply-flex justify-content-center align-items-center">
+                                            <div class="img-box">
+                                                <a href="#">
+                                                    <img src="assets/img/benches.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p class="text-center mt-4">Benches</p>
+                                        </div>
+                                        <div
+                                            class=" sale-product-card disply-flex justify-content-center align-items-center">
+                                            <div class="img-box">
+                                                <a href="#">
+                                                    <img src="assets/img/chests.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p class="text-center mt-4">Chests</p>
+                                        </div>
+                                        <div class="">
+                                            <a href="#" class="see-all-btn">
+                                                see all
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-top-slider-card">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-4 col-sm-12" >
+                                            <p class="sub-text">Shop by</p>
+                                            <p class="main-text">Bedroom</p>
+                                            <a href="#" class="shop-btn">
+                                                Shop Bedroom Sets
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-9 col-md-8 col-sm-12" >
+                                            <div class="big-img-set">
+                                                <img src="assets/img/bed-set-5b-w.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-product-section">
+                                <div class="container">
+                                    <div class="d-flex justify-content-between  flex-wrap flex-wrap-sm">
+
+                                        <div
+                                            class=" sale-product-card disply-flex justify-content-center align-items-center">
+                                            <div class="img-box">
+                                                <a href="#">
+                                                    <img src="assets/img/beds.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p class="text-center mt-4">Beds</p>
+                                        </div>
+                                        <div
+                                            class=" sale-product-card disply-flex justify-content-center align-items-center">
+                                            <div class="img-box">
+
+                                                <a href="#">
+                                                    <img src="assets/img/night-stands.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p class="text-center mt-4">Beds</p>
+                                        </div>
+                                        <div
+                                            class="  sale-product-card disply-flex justify-content-center align-items-center">
+                                            <div class="img-box">
+
+                                                <a href="#">
+                                                    <img src="assets/img/dressers-dor.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p class="text-center mt-4">Dressers</p>
+                                        </div>
+                                        <div
+                                            class=" sale-product-card disply-flex justify-content-center align-items-center">
+                                            <div class="img-box">
+                                                <a href="#">
+                                                    <img src="assets/img/benches.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p class="text-center mt-4">Benches</p>
+                                        </div>
+                                        <div
+                                            class=" sale-product-card disply-flex justify-content-center align-items-center">
+                                            <div class="img-box">
+                                                <a href="#">
+                                                    <img src="assets/img/chests.png" alt="">
+                                                </a>
+                                            </div>
+                                            <p class="text-center mt-4">Chests</p>
+                                        </div>
+                                        <div class="">
+                                            <a href="#" class="see-all-btn">
+                                                see all
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next "></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+            <div class="container">
+            </div>
+        </div>
+    </section>
+    <!-- product-suggestion-slider end -->
+    <!-- save price section start -->
+    <section>
+        <div class="container">
+            <div class="save-product-section">
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div>
+                            <p class="text-center mb-0">Save more when you</p>
+                            <p class="text-center">Buy as a Set</p>
+                            <img src="assets/img/set-illustration.png" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="swiper sale-set-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="sale-set-card">
+                                        <div class="img-box">
+                                            <img src="assets/img/Living-Room.png" alt="">
+                                        </div>
+                                        <p class="main-text">Living Room Sets</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="sale-set-card">
+                                        <div class="img-box">
+                                            <img src="assets/img/sale-2.png" alt="">
+                                        </div>
+                                        <p class="main-text">Living Room Sets</p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="sale-set-card">
+                                        <div class="img-box">
+                                            <img src="assets/img/sale-3.png" alt="">
+                                        </div>
+                                        <p class="main-text">Living Room Sets</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="sale-set-card">
+                                        <div class="img-box">
+                                            <img src="assets/img/sale-4.png" alt="">
+                                        </div>
+                                        <p class="main-text">Living Room Sets</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="sale-set-card">
+                                        <div class="img-box">
+                                            <img src="assets/img/sale-3.png" alt="">
+                                        </div>
+                                        <p class="main-text">Living Room Sets</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- save price section end -->
+
+     <!-- services section start -->
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                    <div class=" d-flex align-items-center justify-content-center">
+                        <div class="p-2">
+                            <img src="assets/img/pay-later.png" width="100px" alt="">
+                        </div>
+                        <div class="details-section">
+                            <p class="sub-text">Up to 36 months*</p>
+                            <p class="main-text">Buy Now,<br /> Pay Later</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                    <div class=" d-flex align-items-center justify-content-center">
+                        <div class="p-2">
+                            <img src="assets/img/white-delivery.png" width="100px" alt="">
+                        </div>
+                        <div class="details-section">
+                            <p class="sub-text">Leave the work to us</p>
+                            <p class="main-text">White Glove Delivery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 my-3">
+                    <div class=" d-flex align-items-center justify-content-center">
+                        <div class="p-2">
+                            <img src="assets/img/save-more-tag.png" width="100px" alt="">
+                        </div>
+                        <div class="details-section">
+                            <p class="sub-text">The Advantage</p>
+                            <p class="main-text">Shop More,<br /> Save More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- services section start -->
+
+     <!-- email suggest section start -->
+    <section class="email-suggest-section">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="d-flex align-items-center gap-3 ">
+                        <img src="assets/img/mail-illustration.png" alt="">
+                        <div>
+                            <p class="main-text">Be the 1st to know</p>
+                            <p class="sub-text">Get updates about our sales and more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                    <form action="" class="email-from-box">
+                        <input type="email" placeholder="Enter Your Email" class=" input-email">
+                        <button class="sign-btn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- email suggest section end -->
+    <!-- footer section start -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div>
+                        <a class="navbar-brand" href="#"><span class="company-text"> Company</span><br> <span
+                                class="company-name-text">Name Here</span></a>
+                    </div>
+                    <div>
+                        <div class="social-icons-box">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f icon-social"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter icon-social"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram icon-social"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube icon-social"></i>
+                            </a>
+                        </div>
+                        <p class="copyright-text">© Copyright 2022 Company Name.</p>
+                        <p class="copyright-text">Privacy Policy <span>|</span> Terms of Use</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="footer-list-box">
+                        <p class="footer-title">Get to Know Us</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#" class="nav-link">About Us</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">The Advantage</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Sell on</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Careers</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Social Responsibility</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Reviews</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">A Note on COVID-19</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+                    <div class="footer-list-box">
+                        <p class="footer-title">Get to Know Us</p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#" class="nav-link">My Account</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">My Orders</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Track My Order</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Help Center</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Return Policy</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Shipping & Delivery</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Coupons</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Price Match</a></li>
+                            <li class="list-group-item"><a href="#" class="nav-link">Financing</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 my-3">
+    
+                    <div class="footer-contact-section">
+                        <p class="footer-title">Contact Us</p>
+                        <button class="contact-btn"><svg class="contact-icon" width="21" height="20" viewBox="0 0 21 20"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.56896 15.609C8.67808 16.6046 9.5036 17.2879 9.52018 17.301C9.69471 17.4572 11.5072 19 14.126 19C14.3912 19 14.6583 18.9835 14.9201 18.952C18.004 18.5785 19.0616 16.4607 19.3731 15.5662C19.6323 14.8262 19.1454 14.0321 18.5276 13.7581L15.215 12.2851C15.0213 12.2004 14.8031 12.1577 14.5649 12.1577C14.1801 12.1577 13.6416 12.2816 13.283 12.6289L12.2402 13.6394C12.1521 13.7249 11.9548 13.8105 11.7498 13.8105C11.6477 13.8105 11.5997 13.7878 11.5971 13.7869C10.9129 13.4431 9.8352 12.7554 8.58733 11.4334C7.4782 10.2545 6.95375 9.45424 6.71028 8.99087C6.64745 8.87219 6.73035 8.52401 6.88743 8.36694L7.81504 7.43932C8.27754 6.97595 8.4765 6.16003 8.28016 5.53871L7.23648 2.22269C7.04712 1.62406 6.4162 1.00274 5.68581 1.00012H5.66835H5.65265C4.32624 1.0455 3.19268 1.67554 2.46054 2.77507C1.66731 3.9636 1.34443 5.76822 1.67167 7.62956C1.78075 8.25087 1.96226 8.87743 2.22318 9.49089C2.56961 10.3077 3.05742 11.1 3.70143 11.8173C4.0819 12.2406 4.49291 12.6717 4.91265 13.0958"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Call</button>
+                        <button class="contact-btn"> <svg class="contact-icon" width="26" height="24" viewBox="0 0 26 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="1.62002" y="4.48965" width="22.76" height="15.4104" rx="1.9" stroke="white"
+                                    stroke-width="1.8" stroke-linejoin="round" />
+                                <path d="M2.52002 5.38965L13 13.8961L23.48 5.38965" stroke="white" stroke-width="1.8"
+                                    stroke-linejoin="round" />
+                                <path d="M2.52002 19.0001L6.5623 15.2572" stroke="white" stroke-width="1.8"
+                                    stroke-linecap="round" />
+                                <path d="M23.48 19.0001L19.4377 15.2572" stroke="white" stroke-width="1.8"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end -->
+
+ <!-- bootstrap js-->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+ integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+ crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+ integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+ crossorigin="anonymous"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/index.js" ></script>
+</body>
+</html>
